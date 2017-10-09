@@ -1,15 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Console;
 
-namespace SimpleDataTypes
+
+namespace SimpleDataTypes_ConsoleApplication
 {
     class Program
     {
+        static string s = "Hello";  // ohne static ist die Variable nur mit einem Object verfügbar
         static void Main(string[] args)
         {
+            string s = "Hello";  // ohne static ist die Variable nur mit einem Object verfügbar
+            WriteLine(Program.s);
+            ReadLine();
+            WriteLine(s);
+            ReadLine();
         }
     }
 }
